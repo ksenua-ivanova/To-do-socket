@@ -1,0 +1,19 @@
+<script defer src='/js/task.js'></script>
+
+<div class="tema" >
+  <p>{{list.name}}</p>
+</div>
+<div class='task-body'>
+<form name="taskForm">
+    <input type="text" name="text" class="todo__text" id="addTask" name="addTask">
+  <button type="submit" class="todo__add"><img class="tod__add" src="/image/premium-icon-plus-4386649.png"></button>
+</form>
+</div>
+<div id="containerTask">
+  {{#each tasks}}
+  <div data-card class="taska" id="taska">
+  <p class="task-text">{{this.text}}</p>
+  <button type="button" class="delete"><img data-delete={{this.id}} class="deleteIm" src="/image/delete-bin-svgrepo-com.svg"></button>
+  </div>
+  {{/each}}
+ 

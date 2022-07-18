@@ -1,0 +1,13 @@
+<p>{{list.name}}</p>
+<div class='task-body'>
+<form name="addTask">
+    <input type="text" name="text" class="form-control" id="addTask" name="addTask">
+  <button type="submit" class="button btn-add">Добавить задачу</button>
+</form>
+</div>
+<div id="container-task" class="row">
+  {{#each tasks}}
+  <div class="entries">
+    <p>{{this.text}}</p>
+  </div>
+  {{/each}}

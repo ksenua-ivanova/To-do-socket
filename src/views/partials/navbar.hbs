@@ -1,0 +1,18 @@
+<div class="hamburger-menu">
+  <h3 class="menu_label">To-do list</h3>
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <ul class="menu__box">
+    {{#if userId}}
+    <li><a class="menu__item" href="/list">Мои списки</a></li>
+    {{!-- <li><a class="menu__item" href="#">Мой профиль</a></li> --}}
+    <li><a class="menu__item" href="/logout">Выйти</a></li>
+    {{else}}
+    <li><a class="menu__item" href="/registration">Регистрация</a></li>
+    <li><a class="menu__item" href="/login">Войти</a></li>
+    {{/if}}
+  </ul>
+  {{!-- <a class="menu_exit" href="/logout">Выйти</a> --}}
+</div>

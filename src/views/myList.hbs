@@ -1,0 +1,16 @@
+<div class="add-list">
+<form action="/list/new">
+  <button type="submit" class="button btn-add">Добавить список дел</button>
+</form>
+</div>
+<div id="container" class="row">
+  {{#each lists}}
+  <div class="entries">
+    {{> list}}
+  </div>
+  {{/each}}
+  {{#each memberlist}}
+  <div class="entries">
+    {{> listMember}}
+  </div>
+  {{/each}}
